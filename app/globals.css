@@ -2,28 +2,77 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 255, 255, 255;
+  --background-rgb: 0, 0, 0;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --foreground-rgb: 0, 0, 0;
+    --background-rgb: 255, 255, 255;
   }
 }
 
+@media (min-width: 800px) {
+  #nav-menu, #nav-search-sm {
+    display: none;
+  }
+
+  #nav-categories, #nav-shopping-cart, #nav-login, #nav-signup, #nav-localization {
+    display: flex;
+  }
+
+  #nav-search-lg {
+    display: block;
+  }
+
+  #nav-logo {
+    flex-grow: 0;
+  }
+
+  #nav-logo-image {
+    width: 91px;
+    height: 34px;
+  }
+}
+
+@media (min-width: 920px) {
+  #nav-teach-on-udemy {
+    display: block;
+  }
+}
+
+@media (min-width: 1080px) {
+  #nav-udemy-business {
+    display: block;
+  }
+}
+
+
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+#carousel-component div {
+  border-radius: 0;
+}
+
+#carousel-component button {
+  background-color: #2d2f31 !important;
+  border-radius: 50%;
+}
+
+#carousel-component button span {
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: none;
 }
 
 @layer utilities {
