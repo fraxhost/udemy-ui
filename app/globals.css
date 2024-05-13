@@ -20,11 +20,16 @@
 }
 
 @media (min-width: 800px) {
-  #nav-menu, #nav-search-sm {
+  #nav-menu,
+  #nav-search-sm {
     display: none;
   }
 
-  #nav-categories, #nav-shopping-cart, #nav-login, #nav-signup, #nav-localization {
+  #nav-categories,
+  #nav-shopping-cart,
+  #nav-login,
+  #nav-signup,
+  #nav-localization {
     display: flex;
   }
 
@@ -54,7 +59,6 @@
   }
 }
 
-
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
@@ -73,6 +77,20 @@ body {
   background-color: transparent;
   border-radius: 50%;
   box-shadow: none;
+}
+
+#udemy-topic-tab button {
+  background-color: transparent;
+  color: gray;
+}
+
+#udemy-topic-tab button:focus {
+  box-shadow: none !important;
+  color: black !important;
+}
+
+#udemy-topic-tab button:active {
+  color: black !important;
 }
 
 @layer utilities {
