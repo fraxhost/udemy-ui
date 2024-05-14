@@ -3,6 +3,7 @@
 import { useRef, useState } from "react";
 
 import { Tabs, TabsRef } from "flowbite-react";
+import CourseCardComponent from "../cards/CourseCardComponent";
 
 const TopicTabContainer = () => {
   const tabsRef = useRef<TabsRef>(null);
@@ -48,8 +49,9 @@ const TopicTabContainer = () => {
       >
         {tabs.map((tab, index) => (
           <Tabs.Item key={index} title={tab.title}>
+            <CourseCardComponent />
             <p className="text-md text-gray-500 dark:text-gray-400">
-              {tab.content}
+              {/* {tab.content} */}
             </p>
           </Tabs.Item>
         ))}
