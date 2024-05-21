@@ -1,4 +1,4 @@
-import CarouselComponent from "@/components/carousels/CarouselComponent";
+import PrimaryCarouselComponent from "@/components/carousels/PrimaryCarouselComponent";
 import AttIcon from "@/components/icons/AttIcon";
 import CiscoIcon from "@/components/icons/CiscoIcon";
 import CitiIcon from "@/components/icons/CitiIcon";
@@ -14,7 +14,7 @@ export default function Home() {
 
   return (
     <main>
-      <CarouselComponent images={images}></CarouselComponent>
+      <PrimaryCarouselComponent images={images}></PrimaryCarouselComponent>
 
       <section className="w-full h-60 bg-gray-100 flex flex-col">
         <h2 className="text-xl font-sans font-normal text-gray-500 flex justify-center">

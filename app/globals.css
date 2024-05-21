@@ -93,6 +93,16 @@ body {
   color: black !important;
 }
 
+.react-multiple-carousel__arrow--right {
+  top: 50%;
+  right: -20px !important;
+}
+
+.react-multiple-carousel__arrow--left {
+  top: 50%;
+  left: -20px !important;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

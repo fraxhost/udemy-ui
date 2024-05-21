@@ -6,7 +6,8 @@ import Rating from "../ui/Rating";
 const CourseCardComponent = () => {
   const props = {
     title: "100 Days of Code: The Complete Python Pro Bootcamp",
-    image: "https://source.unsplash.com/random/250x150",
+    // image: "https://source.unsplash.com/random/250x150",
+    image: `https://picsum.photos/seed/${new Date().getTime()}/220/150`,
     altText: "random",
     instructor: "Dr. Angela Yu",
     rating: 4.7,
@@ -17,7 +18,7 @@ const CourseCardComponent = () => {
   };
 
   return (
-    <div className="flex flex-col w-[250px]">
+    <div className="flex flex-col w-[240px]">
       <img src={props.image} alt={props.altText}></img>
       <h1 className="font-bold leading-5 text-gray-700 mt-2">{props.title}</h1>
       <p className="font-sans font-normal text-xs mt-1">{props.instructor}</p>

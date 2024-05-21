@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import ExploreButton from "../buttons/ExploreButton";
+import CourseCardComponent from "../cards/CourseCardComponent";
+import SecondaryCarouselComponent from "../carousels/SecondaryCarouselComponent";
 
 interface TabItem {
   title: string;
@@ -14,6 +16,16 @@ interface TabsProps {
 
 const Tabs: React.FC<TabsProps> = ({ items }) => {
   const [activeTab, setActiveTab] = useState<number>(0);
+
+  const slides = [
+    <CourseCardComponent />,
+    <CourseCardComponent />,
+    <CourseCardComponent />,
+    <CourseCardComponent />,
+    <CourseCardComponent />,
+    <CourseCardComponent />,
+    <CourseCardComponent />,
+  ];
 
   return (
     <div>
@@ -30,13 +42,16 @@ const Tabs: React.FC<TabsProps> = ({ items }) => {
           </button>
         ))}
       </div>
-      <div className="p-6 border w-full h-96">
+      <div className="p-6 border w-full min-h-[500px]">
         <div className="text-2xl font-bold text-gray-800">
           {items[activeTab].heading}
         </div>
         <div className="w-2/3 mt-4">{items[activeTab].description}</div>
         <div className="mt-4">
           <ExploreButton title={items[activeTab].buttonText} />
+          <div className="mt-4">
+            <SecondaryCarouselComponent slides={slides} />
+          </div>
         </div>
       </div>
     </div>
