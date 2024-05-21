@@ -93,14 +93,23 @@ body {
   color: black !important;
 }
 
+#secondary-carousel {
+  position: relative;
+}
+
+.react-multi-carousel-list {
+  position: static !important;
+  overflow: hidden;
+}
+
 .react-multiple-carousel__arrow--right {
-  top: 50%;
-  right: -20px !important;
+  top: 70px;
+  right: -15px !important;
 }
 
 .react-multiple-carousel__arrow--left {
-  top: 50%;
-  left: -20px !important;
+  top: 70px;
+  left: -15px !important;
 }
 
 @layer utilities {

@@ -1,8 +1,6 @@
 import React, { ReactNode, useState } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import ShoppingCartIcon from "../icons/ShoppingCartIcon";
-import ExploreButton from "../buttons/ExploreButton";
 
 interface SecondaryCarouselComponentProps {
   slides: ReactNode[];

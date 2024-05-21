@@ -18,7 +18,7 @@ const CourseCardComponent = () => {
   };
 
   return (
-    <div className="flex flex-col w-[240px]">
+    <div className="flex flex-col w-[240px] mx-auto">
       <img src={props.image} alt={props.altText}></img>
       <h1 className="font-bold leading-5 text-gray-700 mt-2">{props.title}</h1>
       <p className="font-sans font-normal text-xs mt-1">{props.instructor}</p>
