@@ -1,23 +1,20 @@
 "use client";
 
 import React, { ReactNode } from "react";
-import CourseCardComponent from "../cards/CourseCardComponent";
+
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import TestimonialCardComponent from "../cards/TestimonialCardComponent";
 
-interface SecondaryCarouselComponentProps {
-  slides: ReactNode[];
-}
-
-const SecondaryCarouselComponent = () => {
+const TestimonialCarouselComponent = () => {
   const slides: ReactNode[] = [
-    <CourseCardComponent />,
-    <CourseCardComponent />,
-    <CourseCardComponent />,
-    <CourseCardComponent />,
-    <CourseCardComponent />,
-    <CourseCardComponent />,
-    <CourseCardComponent />,
+    <TestimonialCardComponent />,
+    <TestimonialCardComponent />,
+    <TestimonialCardComponent />,
+    <TestimonialCardComponent />,
+    <TestimonialCardComponent />,
+    <TestimonialCardComponent />,
+    <TestimonialCardComponent />,
   ];
 
   const responsive = {
@@ -52,11 +49,13 @@ const SecondaryCarouselComponent = () => {
     <div className="max-w-[1340px] h-[400px] mx-auto secondary-carousel">
       <Carousel arrows responsive={responsive}>
         {slides.map((slide, index) => (
-          <div key={index}>{slide}</div>
+          <div key={index} className="mx-2">
+            {slide}
+          </div>
         ))}
       </Carousel>
     </div>
   );
 };
 
-export default SecondaryCarouselComponent;
+export default TestimonialCarouselComponent;

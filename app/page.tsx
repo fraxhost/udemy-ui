@@ -1,4 +1,7 @@
+import TestimonialCardComponent from "@/components/cards/TestimonialCardComponent";
 import PrimaryCarouselComponent from "@/components/carousels/PrimaryCarouselComponent";
+import SecondaryCarouselComponent from "@/components/carousels/SecondaryCarouselComponent";
+import TestimonialCarouselComponent from "@/components/carousels/TestimonialCarouselComponent";
 import AttIcon from "@/components/icons/AttIcon";
 import CiscoIcon from "@/components/icons/CiscoIcon";
 import CitiIcon from "@/components/icons/CitiIcon";
@@ -13,7 +16,7 @@ export default function Home() {
   const images = ["/images/working-woman.jpg", "/images/working-people.jpg"];
 
   return (
-    <main>
+    <main className="bg-slate-50">
       <PrimaryCarouselComponent images={images}></PrimaryCarouselComponent>
 
       <section className="w-full h-60 bg-gray-100 flex flex-col">
@@ -45,6 +48,22 @@ export default function Home() {
         </p>
 
         <TopicTabContainer></TopicTabContainer>
+      </section>
+
+      <section className="max-w-[1340px] mt-10 p-5 mx-auto">
+        <h2 className="font-bold text-3xl font-serif">
+          How learners like you are achieving their goals
+        </h2>
+        <div className="mt-4">
+          <TestimonialCarouselComponent />
+        </div>
+      </section>
+
+      <section className="max-w-[1340px] mt-10 p-5 mx-auto">
+        <h2 className="font-bold text-3xl font-serif">Learners are viewing</h2>
+        <div className="mt-4">
+          <SecondaryCarouselComponent />
+        </div>
       </section>
     </main>
   );

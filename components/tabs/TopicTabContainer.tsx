@@ -1,9 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
-
 import Tabs from "./Tabs";
-import CourseCardComponent from "../cards/CourseCardComponent";
 
 const TopicTabContainer = () => {
   const tabs = [
