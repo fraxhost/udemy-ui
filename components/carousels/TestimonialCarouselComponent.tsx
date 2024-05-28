@@ -29,11 +29,11 @@ const TestimonialCarouselComponent = () => {
     },
     latop: {
       breakpoint: { max: 1920, min: 1368 },
-      items: 5,
+      items: 4,
     },
     smallLatop: {
       breakpoint: { max: 1368, min: 1100 },
-      items: 4,
+      items: 3,
     },
     tablet: {
       breakpoint: { max: 1100, min: 850 },

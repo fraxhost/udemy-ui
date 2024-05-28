@@ -4,7 +4,7 @@ import SearchIcon from "../icons/SearchIcon";
 import ShoppingCartIcon from "../icons/ShoppingCartIcon";
 import LoginButton from "../buttons/LoginButton";
 import SignUpButton from "../buttons/SignUpButton";
-import LocalizationButton from "../buttons/LocalizationButton";
+import LocalizationIconButton from "../buttons/LocalizationIconButton";
 
 const Navbar = () => {
   return (
@@ -22,7 +22,7 @@ const Navbar = () => {
         <li id="nav-logo" className="grow flex justify-center px-5 py-4">
           <Link href="/" className="flex item-center">
             <Image
-              id="nav-logo-image"  
+              id="nav-logo-image"
               src="images/logos/udemy.svg"
               alt="udemy logo"
               width={75}
@@ -87,7 +87,7 @@ const Navbar = () => {
         </li>
         <li id="nav-localization" className="hidden grow-0 py-4 pr-10">
           <Link href="/">
-            <LocalizationButton />
+            <LocalizationIconButton />
           </Link>
         </li>
       </ul>

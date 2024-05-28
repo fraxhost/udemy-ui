@@ -1,16 +1,21 @@
-import Image from "next/image"
+import Image from "next/image";
 
-const LocalizationButton = () => {
-  return (
-    <button className="w-10 h-10 bg-transparent hover:bg-gray-200 border border-black flex justify-center items-center">
-      <Image
-        src="images/icons/world.svg"
-        alt="world icon"
-        width={15}
-        height={15}
-      />
-    </button>
-  )
+interface LocalizationButtonProps {
+  title: string;
 }
 
-export default LocalizationButton
+const LocalizationButton = (props: LocalizationButtonProps) => {
+  return (
+    <button className="w-36 h-10 bg-transparent border border-gray flex justify-start items-center gap-2 pl-4">
+      <Image
+        src="images/icons/white-world.svg"
+        alt="world icon"
+        width={18}
+        height={18}
+      />
+      <p className="text-base">{props.title}</p>
+    </button>
+  );
+};
+
+export default LocalizationButton;
