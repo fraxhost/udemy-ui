@@ -12,11 +12,11 @@ const CategoryCardComponent = (props: CategoryCardComponentProps) => {
         <img
           src={props.imageUrl}
           alt="category design"
-          className="transform hover:scale-110 z-10 mx-auto mt-10"
+          className="transform hover:scale-105 z-10 mx-auto mt-10 absolute top-0 left-5"
           width={250}
           height={250}
         />
-        <div className="absolute top-0 opacity-10 bg-gray-400 w-[300px] h-[300px] pointer-events-none"></div>
+        <div className="bg-[#f8f9fb] w-[300px] h-[300px] pointer-events-none"></div>
       </div>
       <div className="font-bold text-l mt-2">{props.title}</div>
     </div>
